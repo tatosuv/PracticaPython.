@@ -10,9 +10,9 @@ class Persona:
         print("El sexo de la persona es: " + self.sexo)
 
     
-miPersona = Persona("Tato", 20, "Macho")
+miPersona = Persona("Tato", 20, "Masculino")
 miPersona2 = Persona("María", 20, "Femenino")
-miPersona3 = Persona("NN", 20, "Trabuco")
+miPersona3 = Persona("NN", 20, "No binario")
 
 miPersona.datosPersonales()
 miPersona2.datosPersonales()
