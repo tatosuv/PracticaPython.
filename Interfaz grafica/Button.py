@@ -21,7 +21,7 @@ frame= Frame(root)
 frame.pack()
 
 #asigno variables
-var1= StringVar()
+var1= StringVar() #nos dice que es un string, aunque es por defecto
 var2= StringVar()
 resultado= StringVar()
 
