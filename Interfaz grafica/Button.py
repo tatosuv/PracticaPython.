@@ -8,6 +8,13 @@ def sumar():
 def restar():
     resultado.set(int(var1.get())- int(var2.get())) #set: lo que va a recibir,al resultado le seteo la ecuación. get: va a rescatar lo que recibe 
 
+def multiplicar():
+    resultado.set(int(var1.get())* int(var2.get())) #set: lo que va a recibir,al resultado le seteo la ecuación. get: va a rescatar lo que recibe 
+
+def dividir():
+    resultado.set(int(var1.get())/ int(var2.get())) #set: lo que va a recibir,al resultado le seteo la ecuación. get: va a rescatar lo que recibe 
+
+
 root = Tk()
 
 frame= Frame(root)
@@ -39,6 +46,14 @@ boton1.config(bd=5, font="Curier, 10", command=sumar) #con el command llamo a la
 
 boton2= Button(frame, text="Restar")
 boton2.pack()
-boton2.config(bd=5, font="Curier, 10")
+boton2.config(bd=5, font="Curier, 10", command=restar)
+
+boton3= Button(frame, text="Multiplicar")
+boton3.pack()
+boton3.config(bd=5, font="Curier, 10", command=multiplicar)
+
+boton4= Button(frame, text="Dividir")
+boton4.pack()
+boton4.config(bd=5, font="Curier, 10", command=dividir)
 
 root.mainloop()
