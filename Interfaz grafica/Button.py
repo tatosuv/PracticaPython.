@@ -1,6 +1,6 @@
 from tkinter import *
 
-#creo funciones ara asignarle a los botones
+#creo funciones para asignarle a los botones
 
 def sumar():
     resultado.set(int(var1.get())+ int(var2.get())) #set: lo que va a recibir, get: va a rescatar lo que recibe 
