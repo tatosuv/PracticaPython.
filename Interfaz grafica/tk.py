@@ -16,7 +16,7 @@ def eliminar():
     listaProductos.delete(entrada.get()) 
 
 
-listaProductos=Listbox(root,width=50) # le paso la lista de productos
+listaProductos=Listbox(root,width=50) # le paso la lista de productos, a listaProductos le digo que es un Listbox
 listaProductos.insert(0, "Carne") #en el índice 0 va la carne
 listaProductos.insert(1, "Pollo") 
 listaProductos.insert(2, "Verdura") 
