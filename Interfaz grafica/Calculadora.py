@@ -1,4 +1,5 @@
 from tkinter import *
+from turtle import bgcolor, color
 
 #luego de crear los botones (están mas abajo), creo las funcionalidades que les voy a dar
 
@@ -26,10 +27,11 @@ def operaciones():
 
 root= Tk()
 root.title("Calculadora")
-root.resizable(0,0) #hola
+root.resizable(0,0) 
+root.config(bg="blue")
 
 # Entrada
-entrada = Entry(root, font=("Curier 20"))
+entrada = Entry(root, font=("Curier 20"), bg="yellow", fg="black")
 entrada.grid(row=0, column=0, columnspan=4, padx=5, pady=5) #el columnspan=4 nos dice que el grid tendrá hasta 4 columnas
 
 #Botones
@@ -90,7 +92,6 @@ botonSuma.grid(row=4,column=3, padx=5, pady=5)
 boton0.grid(row=5, column=0,columnspan=2 ,padx=5, pady=5) #el columnspan=2 es para que el boton 0 ocupe 2 columnas
 botonPunto.grid(row=5, column=2,padx=5, pady=5)
 botonIgual.grid(row=5, column=3,padx=5, pady=5)
-
 
 
 
