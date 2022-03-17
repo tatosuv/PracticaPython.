@@ -26,6 +26,7 @@ def operaciones():
 
 root= Tk()
 root.title("Calculadora")
+root.resizable(0,0) #hola
 
 # Entrada
 entrada = Entry(root, font=("Curier 20"))
