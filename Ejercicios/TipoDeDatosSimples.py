@@ -91,3 +91,8 @@ print("Tu índice de masa corporal es: " + str(redondeo_imc))
 
 #Ejercicio 8
 #Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la <n> entre <m> da un cociente <c> y un resto <r> donde <n> y <m> son los números introducidos por el usuario, y <c> y <r> son el cociente y el resto de la división entera respectivamente.
+
+num1 = int(input("Dividendo: "))
+num2 = int(input("Divisor: "))
+
+print(str(num1) + " entre " + str(num2) + " da un cociente " + str(int(num1) // int(num2)) + " y un resto " + str(int(num1) % int(num2)))
