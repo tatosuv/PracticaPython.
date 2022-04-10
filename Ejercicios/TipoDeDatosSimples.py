@@ -80,7 +80,7 @@ print("La suma de los primeros números enteros desde 1 hasta " + str(n) + " es 
 
 #Ejercicio7
 #Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es <imc> donde <imc> es el índice de masa corporal calculado redondeado con dos decimales.
-
+'''
 peso = float(input("Ingrese su peso: "))
 estatura = float(input("Ingrese su estatura: "))
 
@@ -88,7 +88,7 @@ imc = peso / (estatura**2)
 redondeo_imc = round(imc, 2)
 
 print("Tu índice de masa corporal es: " + str(redondeo_imc))
-
+'''
 #Ejercicio 8
 #Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la <n> entre <m> da un cociente <c> y un resto <r> donde <n> y <m> son los números introducidos por el usuario, y <c> y <r> son el cociente y el resto de la división entera respectivamente.
 
