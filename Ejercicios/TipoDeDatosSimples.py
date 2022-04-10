@@ -91,8 +91,52 @@ print("Tu índice de masa corporal es: " + str(redondeo_imc))
 '''
 #Ejercicio 8
 #Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la <n> entre <m> da un cociente <c> y un resto <r> donde <n> y <m> son los números introducidos por el usuario, y <c> y <r> son el cociente y el resto de la división entera respectivamente.
-
+'''
 num1 = int(input("Dividendo: "))
 num2 = int(input("Divisor: "))
 
 print(str(num1) + " entre " + str(num2) + " da un cociente " + str(int(num1) // int(num2)) + " y un resto " + str(int(num1) % int(num2)))
+'''
+#Ejercicio 9
+#Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el número de años, y muestre por pantalla el capital obtenido en la inversión. 
+'''
+cantidad_invertir = float(input("Cantidad a invertir: "))
+interes_anual = float(input("Ingrese un porcentaje anual: "))
+anios = int(input("Cuantos años piensa invertir? "))
+
+calculo_total = (cantidad_invertir * interes_anual) * anios + cantidad_invertir
+print("El monto total de tu capital es de: " +"$"+  str(round(calculo_total, 2)))
+
+'''
+
+#Ejercicio 10
+#Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas. Suele hacer venta por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g. Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del paquete que será enviado.
+'''
+peso_payaso = 0.112
+peso_munieca = 0.075
+
+cantidad_payaso = int(input("Ingrese cantidad de payasos: "))
+cantidad_munieca = int(input("Ingrese cantidad de muñecas: "))
+
+if cantidad_payaso >1 and cantidad_munieca > 1:
+    peso_payaso = peso_payaso * cantidad_payaso
+    peso_munieca = peso_munieca * cantidad_munieca
+    peso_total = peso_munieca + peso_payaso
+    print("El peso total de tu pedido es de " + str(peso_total) + " kg," + str(peso_payaso) + " kg corresponden a los payasos y " + str(peso_munieca) + "kg corresponden a las muñecas")
+else:
+    peso_total = peso_munieca + peso_payaso
+    print("El peso total de tu pedido es de " + str(peso_total) + " kg," + str(peso_payaso) + " kg corresponden a los payasos y " + str(peso_munieca) + "kg corresponden a las muñecas")
+'''
+#Ejercicio 11
+# Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros. Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
+
+ahorros = float(input("Ingrese la cantidad de ahorros: "))
+interes = 0.04
+
+total = ahorros * (1+interes)
+ahorro_2do_anio = total * (1+interes)
+ahorro_3er_anio = ahorro_2do_anio * (1+interes)
+
+print("A fin de año, usted tendrá en su cuenta el monto de " + str(round(total, 2)) + " pesos.")
+print("Para finales del segundo año, usted tendrá en su cuenta el monto de " + str(round(ahorro_2do_anio, 2)) + " pesos.")
+print("Para finales del tercer año, usted tendrá en su cuenta el monto de " + str(round(ahorro_3er_anio, 2)) + " pesos.")
