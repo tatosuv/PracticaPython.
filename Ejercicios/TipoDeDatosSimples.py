@@ -129,7 +129,7 @@ else:
 '''
 #Ejercicio 11
 # Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros. Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
-
+'''
 ahorros = float(input("Ingrese la cantidad de ahorros: "))
 interes = 0.04
 
@@ -140,3 +140,20 @@ ahorro_3er_anio = ahorro_2do_anio * (1+interes)
 print("A fin de año, usted tendrá en su cuenta el monto de " + str(round(total, 2)) + " pesos.")
 print("Para finales del segundo año, usted tendrá en su cuenta el monto de " + str(round(ahorro_2do_anio, 2)) + " pesos.")
 print("Para finales del tercer año, usted tendrá en su cuenta el monto de " + str(round(ahorro_3er_anio, 2)) + " pesos.")
+'''
+#Ejercicio 12
+# Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total.
+
+panDelDia = 3.49
+noPanDelDia = panDelDia - (panDelDia * 0.60)
+
+cualCompra = input("Que tipo de pan piensa llevar? Si es del día ponga DIA, de lo contrario ponga NO: ")
+
+if cualCompra == "DIA":
+    print("El precio del pan es de " + str(panDelDia)+ "$")
+elif cualCompra == "NO":
+    print("El precio del pan es de " + str(noPanDelDia)+ "$")
+else: 
+    print("Por favor, especifique que tipo de pan va a llevar")
+    cualCompra = input("Que tipo de pan piensa llevar? Si es del día ponga DIA, de lo contrario ponga NO: ")
+    
