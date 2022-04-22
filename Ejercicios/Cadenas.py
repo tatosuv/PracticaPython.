@@ -53,9 +53,16 @@ print(frase.replace(vocal,vocal.upper()))
 '''
 # Ejercicio 7
 # Escribir un programa que pregunte el correo electrónico del usuario en la consola y muestre por pantalla otro correo electrónico con el mismo nombre (la parte delante de la arroba @) pero con dominio ceu.es.
-
+'''
 correo = input("Escriba su mail: ")
 # NuevoCorreo = "@ceu.es" # esto no va
 
 print(correo[:correo.find("@")] + "@ceu.es")
 # print(correo.replace(correo.find("@"),NuevoCorreo)) # esto no va
+'''
+# Ejercicio 8 
+# Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.
+
+precio = input("Introduce un precio con 2 decimales: ")
+
+print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centimos,")
