@@ -62,7 +62,15 @@ print(correo[:correo.find("@")] + "@ceu.es")
 '''
 # Ejercicio 8 
 # Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.
-
+'''
 precio = input("Introduce un precio con 2 decimales: ")
 
 print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centimos,")
+'''
+
+# Ejercicio 9
+# Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla, el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el mes se introduzcan con un solo carácter.
+
+cumpleanito = input("Ingrese su fecha de nacimiento: ")
+
+print(cumpleanito)
